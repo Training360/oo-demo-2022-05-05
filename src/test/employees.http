@@ -1,0 +1,26 @@
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "John Doe"
+}
+
+### Skills
+
+GET http://localhost:8080/api/employees/1/acquired-skills
+Content-Type: application/json
+
+### Acquire skill
+POST http://localhost:8080/api/employees/1/acquired-skills
+Content-Type: application/json
+
+{"skills": [
+    {
+        "skillId": 1,
+        "level": 3
+    },
+    {
+        "skillId": 2,
+        "level": 4
+    }
+]}
